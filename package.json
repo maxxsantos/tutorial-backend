@@ -1,11 +1,22 @@
 {
   "name": "backend-tutorial",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A basic Typescript API with restify",
+  "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node-dev src/index.ts",
+    "build": "tsc --outdir dist src/index.ts"
   },
   "author": "MaxSS",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "local"
+  },
+  "dependencies": {
+    "@types/restify": "^8.4.2",
+    "restify": "^8.5.1",
+    "restify-cors-middleware2": "^2.0.0",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.8.3"
+  }
 }
